@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique - Validação de Formulário</title>
+</head>
+<body>
+
+    <h1>Validação de Comparação Numérica</h1>
+
+    <form id="meuFormulario" onsubmit="return validarFormulario()">
+        <div>
+            <label for="campoA">Campo A:</label>
+            <input type="number" id="campoA" name="campoA" required>
+        </div>
+        <div>
+            <label for="campoB">Campo B:</label>
+            <input type="number" id="campoB" name="campoB" required>
+        </div>
+        <br>
+        <button type="submit">Validar</button>
+    </form>
+
+    <p id="mensagem" style="font-weight: bold; margin-top: 15px;"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
